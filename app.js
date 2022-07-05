@@ -18,5 +18,7 @@ app.use((req, res, next) => {
 // app.use('/feed', feedRoutes);
 // //declaration of the routes.
 
-app.listen(8080);
-//run the server in any port of your choice
+app.listen(process.env.PORT || 8080, 
+    () => console.log("Server is running..."));
+
+// app.listen(8080);
